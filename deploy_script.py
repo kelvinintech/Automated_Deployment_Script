@@ -6,7 +6,8 @@ def deploy_app():
     os.chdir(r'C:\Users\kelvi\OneDrive\Desktop\projects\Automated_Deployment_Script')
     subprocess.run(['git', 'pull'])
     subprocess.run(['pip', 'install', '-r', 'requirements.txt'])
-    subprocess.run(['systemctl', 'restart', 'myapp'])
+    #subprocess.run(['systemctl', 'restart', 'myapp'])
+    print("Restart command skipped on Windows.")
     print("Deployment is completed successfully!")
 
 
